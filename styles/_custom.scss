@@ -1,0 +1,155 @@
+html a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  background-color: transparent; // Remove the gray background on active links in IE 10.
+
+  @include hover() {
+    color: $link-hover-color !important;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+p,
+ul {
+  margin-bottom: 0;
+}
+
+body {
+  // background: linear-gradient(to bottom left, black, #e42afd);
+  background: black;
+  background-image: url("./Vector 7.svg"), url("./Vector 8.svg"),
+    url("./Vector 9.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fa-spin {
+  animation: spin infinite 4s linear;
+}
+
+a.no-hover {
+  @include hover() {
+    color: inherit !important;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.pages-tabs {
+  .nav-link {
+    @apply py-4 outline-none text-gray-400 mr-3;
+    margin-bottom: -1px;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $body-color;
+  }
+
+  .nav-link.active {
+    @apply border-pink;
+    border-bottom-width: 3px;
+    color: $body-color;
+  }
+}
+
+.progress-bar-striped {
+  @include gradient-striped(darken(#44f1a6, 10%));
+  background-size: $progress-height $progress-height;
+}
+
+.btn-main {
+  // @apply py-3 border-2;
+  @include button-variant(#6825e7, $mainLighter);
+
+  background: linear-gradient(180deg, #9d28eb 0%, #e42afd 100%);
+  border-radius: 17px;
+
+  &:hover {
+    color: inherit !important;
+  }
+}
+
+.btn-main2 {
+  // @apply py-3 border-2;
+  @include button-variant(#6825e7, $mainLighter);
+  font-weight: 900;
+  font-size: 10px;
+
+  background: linear-gradient(180deg, #9d28eb 0%, #e42afd 100%);
+  border-radius: 17px;
+
+  &:hover {
+    color: inherit !important;
+  }
+}
+
+.special-button {
+  background: #ff27d6;
+  width: 102.85px;
+  height: 32.3px;
+}
+
+.special-button-text {
+  font-size: 11px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.dex-button {
+  width: 31.45px;
+  height: 32.3px;
+
+  background: #ff27d6;
+  border-radius: 8px;
+}
+
+.dex-button-footer {
+  width: 31.45px;
+  height: 32.3px;
+  // background: #FFFFFF;
+  // fill: #FFFFFF;
+}
+
+.btn-apply {
+  @apply flex justify-center items-center;
+  background: linear-gradient(180deg, #9d28eb 0%, #e42afd 100%);
+  border-radius: 17px;
+  transition: 0.2s;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  &:hover {
+    color: inherit !important;
+    text-decoration: none;
+  }
+}
+
+// Gleam whitelist
+.e-widget-wrapper {
+  max-width: 700px !important;
+}
+
+iframe.e-embed-frame {
+  max-width: 700px !important;
+
+  html.enter {
+    max-width: 700px !important;
+  }
+}

@@ -1,0 +1,5 @@
+.addressPill {
+    @apply py-1 px-3 hover:bg-blue-700 flex items-center justify-between top-0 font-normal outline-none relative;
+    background: linear-gradient(to right, #6825e7, #aa58b8);
+    top: 0 !important;
+}

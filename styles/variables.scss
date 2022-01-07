@@ -1,0 +1,74 @@
+/* make the customizations */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$body-bg: $dark;
+$body-color: $white;
+$font-family-sans-serif: "Poppins", "sans-serif";
+
+$primary: #ff27d6;
+$accent: #9d28eb;
+$mainLighter: #ba84ff;
+$info: #3b82f6;
+$warning: #f9b707;
+$success: $success;
+$danger: #dc2626; // red-600
+$darker: $gray-900;
+$darkest: #0e0e0e;
+$dark: #1a192e;
+$dark-l: $gray-700;
+
+$theme-colors: (
+  // blue-500
+  "accent": $accent,
+  "walletconnect": darken(#3b99fc, 30%),
+  "metamask": #f6851b,
+  "trustwallet": #3274bb,
+  "dark-l": $dark-l,
+  "darker": $darker,
+  "darkest": $darkest
+);
+
+$text-muted: $gray-500;
+
+$card-border-radius: 3px;
+$btn-border-radius: 3px;
+$btn-border-radius-sm: 3px;
+
+$enable-shadows: true;
+
+$jumbotron-bg: $darker;
+
+$dropdown-bg: $dark;
+$dropdown-link-hover-bg: $dark;
+$dropdown-link-active-bg: $dark;
+$dropdown-link-color: $body-color;
+$dropdown-link-hover-color: $primary;
+
+$modal-content-bg: $dark;
+$modal-footer-border-color: $dark;
+$modal-header-border-color: $dark;
+
+$close-color: $light;
+
+$progress-bg: $dark-l;
+
+$link-color: $primary;
+$link-decoration: underline;
+$link-hover-color: darken($link-color, 25%);
+$link-hover-decoration: none;
+
+$table-color: $body-color;
+$table-border-color: none;
+
+$input-bg: $darker;
+$input-disabled-bg: $gray-700;
+$input-focus-bg: $darker;
+$input-color: $gray-100;
+$input-focus-color: $gray-100;
+$input-group-addon-color: $input-color;
+$input-group-addon-bg: $gray-800;
+$input-border-color: $gray-700;
+$input-focus-border-color: $gray-700;
+$input-group-addon-border-color: $gray-700;

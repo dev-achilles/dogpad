@@ -1,0 +1,23 @@
+.content {
+  @apply leading-relaxed;
+
+  h1 {
+    @apply text-3xl py-3 text-center;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold mb-8;
+  }
+
+  p, ul {
+    @apply mb-8
+  }
+
+  ul {
+    @apply list-disc pl-6;
+
+    li {
+      @apply py-3;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+
+  b {
+    @apply font-bold;
+  }
+
+  p {
+    margin-bottom: 0 !important;
+  }
+
+  @font-face {
+    font-family: "PFDinDisplayPro";
+    src: url("/fonts/PFDinDisplayPro-Medi.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "Gill Sans";
+    src: url("/fonts/GillSans/Gill Sans Light.otf") format("opentype");
+    font-style: normal;
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Gill Sans";
+    src: url("/fonts/GillSans/Gill Sans.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Gill Sans";
+    src: url("/fonts/GillSans/Gill Sans Medium.otf") format("opentype");
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "Alfphabet";
+    src: url("/fonts/Alfphabet-IV.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+@layer utilities {
+  .brand-bg {
+    background: linear-gradient(to right, #6825e7, #aa58b8);
+    /* background: linear-gradient(to right, #6825e7, #aa58b8, #5893b8); */
+    /* background: linear-gradient(to right, #25e7d0, #5893b8); */
+  }
+
+  .brand-shadow {
+    box-shadow: 0 4px 46px 4px #ff27d6;
+  }
+
+  .brand-shadow-sm {
+    box-shadow: 0 4px 46px 1px #ff27d6;
+  }
+
+  .brand-shadow-footer {
+    box-shadow: 0 0px 5px 1px #ff27d6;
+  }
+
+  .success-shadow {
+    box-shadow: 0 0 14px 0 rgba(16, 182, 129, 0.5);
+  }
+
+  .brand-text {
+    @apply text-main;
+
+    background-image: linear-gradient(
+      to right,
+      #0bbdda 0%,
+      #7d58f2 39%,
+      #fb71ae 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .brand-text-anim {
+    /*background-image: linear-gradient(*/
+    /*        to right,*/
+    /*        #0bbdda,*/
+    /*        #7d58f2,*/
+    /*        #fb71ae*/
+    /*);*/
+    /*animation: textBgSlide 2s linear infinite;*/
+    animation: textBgSlide 4s ease-in-out infinite;
+    background-size: 400% 400%;
+  }
+
+  .ping-anim {
+    animation: animPing 2s linear infinite;
+    animation-delay: 4s;
+    border-radius: 100%;
+  }
+  .ping-anim-faster {
+    animation: animPing 2s linear infinite;
+    animation-delay: 2s;
+    border-radius: 100%;
+  }
+  @keyframes animPing {
+    0% {
+      box-shadow: 0 0 0 0 #fb71aeee;
+    }
+    15% {
+      box-shadow: 0 0 0 2px #fb71aebb;
+    }
+    40% {
+      box-shadow: 0 0 0 4px #0bbdda44;
+    }
+    75% {
+      box-shadow: 0 0 0 6px #7d58f222;
+    }
+    80% {
+      box-shadow: 0 0 0 8px #7d58f203;
+    }
+  }
+
+  @keyframes textBgSlide {
+    0% {
+      background-position-x: 0;
+    }
+    50% {
+      background-position-x: 100%;
+    }
+    100% {
+      background-position-x: 0;
+    }
+  }
+
+  .img-white {
+    filter: brightness(0) invert(1);
+  }
+}
+
+@layer components {
+  .btnTelegram {
+    @apply rounded-lg flex justify-center items-center select-none px-6 py-3 my-3 hover:text-white uppercase;
+    background: linear-gradient(180deg, #9d28eb 0%, #e42afd 100%);
+    border-radius: 17px;
+    transition: 0.2s;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}

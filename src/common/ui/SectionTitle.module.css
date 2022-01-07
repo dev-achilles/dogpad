@@ -1,0 +1,41 @@
+.title {
+    @apply mb-12;
+    text-align: center;
+    font-size: 3em;
+    color: #43ffb8;
+    background-image: linear-gradient(
+            to right,
+            #0bbdda 0%,
+            #7d58f2 39%,
+            #fb71ae 100%
+    );
+
+    letter-spacing: normal;
+    line-height: 1.53;
+    font-weight: 300;
+    animation: fadeIn 1s;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titleYellow {
+    @apply mb-12;
+    text-align: center;
+    color: #43ffb8;
+    background-image: linear-gradient(
+            to right,
+            #fff 0%,
+            #ffeaa6 39%,
+            #fb71ae 100%
+    );
+
+    letter-spacing: normal;
+    font-size: 2.9rem;
+    line-height: 1.53 !important;
+    font-weight: 300;
+    animation: fadeIn 1s;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

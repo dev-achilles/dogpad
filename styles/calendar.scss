@@ -1,0 +1,29 @@
+@import "~react-big-calendar/lib/sass/styles";
+
+.rbc-btn-group {
+  flex: 1;
+}
+
+.rbc-toolbar button {
+  @apply text-white hover:bg-mainDark hover:text-white border-gray-500 hover:border-gray-500;
+}
+
+.rbc-header {
+  @apply font-medium;
+}
+
+.rbc-today {
+  @apply bg-mainDark bg-opacity-30;
+}
+
+.rbc-off-range-bg {
+  @apply bg-gray-700 bg-opacity-75;
+}
+
+.rbc-header,
+.rbc-header + .rbc-header,
+.rbc-month-row + .rbc-month-row,
+.rbc-day-bg + .rbc-day-bg,
+.rbc-month-view {
+  @apply border-gray-500;
+}

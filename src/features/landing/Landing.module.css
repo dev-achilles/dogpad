@@ -1,0 +1,109 @@
+.heroTitle {
+  @apply pt-6 font-Poppins font-medium text-6xl text-center;
+  animation: fadeIn 2s;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: -0.35px;
+
+  color: #ffffff;
+}
+
+.heroDesc {
+  @apply font-Poppins text-3xl text-center;
+  animation: fadeIn 3s;
+
+  font-style: italic;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.35px;
+
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.subtitle {
+  @apply mb-6 text-lg;
+  text-align: center;
+  font-weight: 400;
+  margin-top: -25px;
+}
+
+.subtitleText {
+  @apply mb-6;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.75em;
+}
+
+.hightlightIcon {
+  @apply text-main text-8xl;
+
+  background-image: linear-gradient(
+    to right,
+    #0bbdda 0%,
+    #7d58f2 39%,
+    #fb71ae 100%
+  );
+
+  letter-spacing: normal;
+  line-height: 1.53 !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.separator {
+  @apply mx-auto my-20;
+  text-align: center;
+  border-bottom: 5px solid #da6ac0;
+  width: 225px;
+}
+
+.nftIcon {
+  @apply text-main text-8xl;
+  font-size: 9em;
+  background-image: linear-gradient(
+    to right,
+    #0bbdda 0%,
+    #7d58f2 39%,
+    #fb71ae 100%
+  );
+
+  letter-spacing: normal;
+  line-height: 1.53 !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tokenomicsCard {
+  @apply md:m-6 my-3 py-3 px-6 bg-gray-700 rounded-2xl;
+  background-image: radial-gradient(at top right, #fb71ae 0%, #7d58f2 70%);
+}
+
+.whiteImg {
+  filter: brightness(0) invert(1);
+}
+
+.heroBuyLink {
+  @apply flex items-center justify-center bg-black md:bg-transparent;
+  width: 35.05px;
+  height: 36px;
+
+  border: 2px solid #ff27d6;
+  box-sizing: border-box;
+  border-radius: 17px;
+}

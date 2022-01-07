@@ -1,0 +1,50 @@
+.bg {
+    transform-origin: center center;
+    background-image: linear-gradient(
+            to right top,
+            #6c22bd,
+            #8b25bb,
+            #a52bb9,
+            #bc34b7,
+            #d040b5,
+            #e645a5,
+            #f55195,
+            #ff6188,
+            #ff796e,
+            #ff965b,
+            #f5b255,
+            #e1cd60
+    );
+    width: 350px;
+    height: 200px;
+    z-index: -1;
+    filter: blur(29px);
+    opacity: 0.69;
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    border-radius: 20px;
+    transform: skewY(-15deg) translate(-50%, -50%);
+}
+
+.bg2 {
+    background-image: linear-gradient(
+            to bottom,
+            #5239d0,
+            #3e4dd8,
+            #285ddd,
+            #0f6bdf,
+            #0078e0,
+            #0087e5,
+            #0095e8,
+            #00a2ea,
+            #00b5ec,
+            #00c5df,
+            #00d3c6,
+            #0edda4
+    );
+    top: auto;
+    bottom: 19%;
+    width: 190px;
+    height: 250px;
+}
