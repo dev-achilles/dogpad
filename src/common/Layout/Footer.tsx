@@ -20,7 +20,7 @@ export function Footer() {
       {false && (
         <div className="text-center py-6 md:py-12 bg-dark2">
           <h2 className="text-2xl md:text-4xl mb-6 font-Poppins font-black">
-            Want to launch your project on BLOKPAD?
+            ....
           </h2>
           <div className="inline-block">
             <a href="#" className="btnTelegram">
@@ -37,15 +37,11 @@ export function Footer() {
               <Link href="/">
                 <a className="text-white mr-auto no-underline pr-4 flex items-center no-hover">
                   <div className="relative">
-                    <img src={BlokNavLogo.src} alt="Logo" className="" />
+                    
                     <div className="pl-1 pt-1 flex items-center">
                       <span className="italic text-main">POWERED BY</span>
-                      <a href="https://trustpad.io/" target="_blank">
-                        <img
-                          src={poweredByTpadImg.src}
-                          alt="Logo"
-                          className="inline-block w-40 inline"
-                        />
+                      <a href="...." target="_blank">
+                        .....
                       </a>
                     </div>
                   </div>
@@ -124,14 +120,7 @@ export function Footer() {
           </div>
 
           <div className="text-xs text-secondary mt-12 ml-3">
-            Participants/Citizens from the following countries are strictly
-            excluded/not allowed to participate in the IDOs: Algeria,
-            Bangladesh, Belarus, Bolivia, Cambodia, China, Colombia, Ecuador,
-            Egypt, Iran, Iraq, Libya, Morocco, Nepal, Pakistan, Sudan, Syria,
-            Ivory Coast, Zimbabwe, Liberia, Myanmar, North Korea, The Crimea,
-            and or the United States of America (USA), as well as Puerto Rico
-            and the Virgin Islands and any other US possessions (the "Prohibited
-            Jurisdictions").
+            .....
           </div>
 
           <div className="flex justify-between items-center mt-6 -mb-6 flex-col-reverse md:flex-row">

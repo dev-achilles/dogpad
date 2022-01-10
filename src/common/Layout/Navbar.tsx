@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import BlokNavLogo from "./BlokPadHeader.svg";
 import { DEFAULT_FORMAT } from "~utils";
-
+ 
 export function Navbar({ children }: { children?: React.ReactNode }) {
   return (
     <header>
@@ -13,9 +13,10 @@ export function Navbar({ children }: { children?: React.ReactNode }) {
         <Link href="/">
             <a className="text-white no-underline pr-4 flex items-center no-hover mb-3 lg:mb-0">
               <img
-                src={BlokNavLogo.src}
+                src={'/brand/watchdog-logo-neue.svg'}
                 alt="Logo"
                 className="mr-2 -mb-1 h-45.34"
+                style={{width: '300px'}}
               />
             </a>
         </Link>
@@ -25,7 +26,7 @@ export function Navbar({ children }: { children?: React.ReactNode }) {
             {children}
           </div>
 
-          <div className="relative py-3">
+          <div className="relative py-3 wallet-connector">
             <UserWallet connectSize="sm" />
             <div className="absolute right-0">
               <CurrentTime />

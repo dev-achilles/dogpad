@@ -25,15 +25,14 @@ export function Hero() {
             <div className={`${styles.bg} ${styles.bg2}`} />
           </div>
           <div className="flex justify-center items-center flex-col">
-            <img src={BlokLogo.src} className="max-h-44 lg:max-h-80" />
-            <img src={BlokWordLogo.src} className="max-h-8" />
+            
           </div>
 
-          <h1 className={styles.heroTitle}>New Launchpad on The BLOK</h1>
+          <h1 className={styles.heroTitle}>dog-LAUNCH</h1>
 
           <div className="lg:w-4/6 mx-auto">
             <p className={styles.heroDesc}>
-              The Ultimate Launchpad for Bloktopians
+              The Ultimate dog-LAUNCH for Watchdogs
             </p>
 
             <div className="flex md:flex-row flex-col flex-wrap justify-center items-center md:space-x-6 mt-6 font-Poppins font-black">
@@ -47,7 +46,7 @@ export function Hero() {
               <div>
                 <a
                   href={TELEGRAM_URL}
-                  className="btnTelegram inline-flex items-center"
+                  className="dog-button btnTelegram inline-flex items-center"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -57,46 +56,13 @@ export function Hero() {
               <div>
                 <a
                   href={TELEGRAM_ANNO_URL}
-                  className="btnTelegram inline-flex items-center"
+                  className="dog-button btnTelegram inline-flex items-center"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Announcements
                 </a>
               </div>
-            </div>
-            <div className="mt-3 flex space-x-6 items-center justify-center flex-wrap gap-3">
-              <LiveChartLink />
-
-              <BuyButton url={TRADE_URLS.okex} img={bscImg.src} />
-              <BuyButton url={TRADE_URLS.quickswap} img={quickImg.src} />
-              <BuyButton url={TRADE_URLS.kucoin} img={kucoinImg.src} />
-
-              <Button
-                title="Buy"
-                variant="outline-primary"
-                href={getTradeUrl(BLOK.address, "QUICK")}
-                target="_blank"
-                className="no-hover border-main font-black rounded-3xl border-2	text-pink flex justify-center  bg-black md:bg-transparent"
-              >
-                <span className="text-sm">BUY &nbsp;</span>
-                <img
-                  src={smallBlokImg.src}
-                  alt="smallBlok"
-                  className="h-5 inline  "
-                />{" "}
-              </Button>
-
-              <Button
-                title="BLOK on PolyScan"
-                variant="outline-primary"
-                href={getTokenUrl(BLOK.address, "POLY")}
-                target="_blank"
-                className="no-hover border-main font-black rounded-3xl border-2	text-pink text-sm bg-black md:bg-transparent"
-              >
-                <chainToExplorerLabel.POLY className="h-5 mr-1 inline" />{" "}
-                Contract
-              </Button>
             </div>
           </div>
         </Col>

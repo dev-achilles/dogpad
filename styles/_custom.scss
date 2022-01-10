@@ -13,14 +13,16 @@ p,
 ul {
   margin-bottom: 0;
 }
-
+ 
 body {
-  // background: linear-gradient(to bottom left, black, #e42afd);
-  background: black;
-  background-image: url("./Vector 7.svg"), url("./Vector 8.svg"),
-    url("./Vector 9.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background: rgb(25,33,83);
+  background: linear-gradient(53deg, rgba(25,33,83,1) 0%, rgba(32,44,120,1) 20%, rgba(80,89,149,1) 46%, rgba(30,40,101,1) 64%, rgba(41,52,136,1) 100%);
+}
+
+.dog-button {
+  background: #192153;
 }
 
 .fa-spin {
@@ -110,10 +112,20 @@ a.no-hover {
 
 .dex-button {
   width: 31.45px;
-  height: 32.3px;
+    height: 32.3px;
+    background: #293488;
+    border-radius: 8px;
+    border-color: #fff;
+    border-width: 2px;
+}
 
-  background: #ff27d6;
-  border-radius: 8px;
+.brand-shadow {
+  box-shadow: none!important;
+}
+
+.wallet-connector button {
+  background: #293488!important;
+  border-color: #fff!important;
 }
 
 .dex-button-footer {
