@@ -109,11 +109,7 @@ export function Footer() {
                   href="/QuillAudits-TrustPad-Smart-Contract-Audit-Report.pdf"
                   target="_blank"
                 >
-                  <Image
-                    src={quillAuditsImg}
-                    alt="QuillAudits Trustpad audit"
-                    className="h-9"
-                  />
+                  
                 </a>
               </div>
             </div>
